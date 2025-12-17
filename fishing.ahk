@@ -16,8 +16,6 @@ F2:: {
             Continue
         }
 
-        Sleep 500
-
         ; === 新增变量 ===
         FishingStartTime := A_TickCount ; 记录开始钓鱼的时间
         LossTargetTime := 0 ; 记录找不到黄色区域的开始时间
@@ -167,4 +165,5 @@ Draw() {
         return True ; 找到了黄色区域
     }
     return False ; 没找到黄色区域
+
 }
